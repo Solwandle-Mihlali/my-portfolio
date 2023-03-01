@@ -2,42 +2,70 @@
 <html lang="en">
 <head>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <span class="full" id="text-holder">FULL</span>
-    <span class="stack" id="text-holder2">STACK</span>
-  
-    <section class="landing" id="landingPage">
-
-        <div class="leftNav">
-            <div class="icon"><ion-icon name="home-outline"></ion-icon></div>
-            <div class="icon"><ion-icon name="planet-outline"></ion-icon></div>
-            <div class="icon"><ion-icon name="document-text-outline"></ion-icon></div>       
-      </div>
-        <div class="me">
-            
-        </div>
-
-        <button id="nav-page2" type="button"><ion-icon name="arrow-forward-outline"></ion-icon></button>
-    </section>
-
-    <section id="section2">
-
-        <div class="left">
-            <h1>ABOUT ME</h1>
-        </div>
-        <div class="right"></div>
-        
-    </section>
-
    
+    <button class="toggle" id="toggle" type="button"><ion-icon name="sunny-outline"></ion-icon></button>
+
+    <div class="container">
+        <nav id="nav">
+            <div class="logo">
+                <h3>MS</h3>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#" class="active">HOME</a>
+                </li>
+                <li>
+                    <a href="#">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#">BLOG</a>
+                </li>
+                <li>
+                    <a href="#">SOCIALS</a>
+                </li>
+            </ul>
+            <span class="buttonCont">
+                <button>
+                    <ion-icon name="cloud-download-outline"></ion-icon>
+                    <a href="pdf/MIHLALI SOLWANDLE UPDATED CV.pdf" download>DOWNLOAD CV</a>
+                </button>
+            </span>
+        </nav>
+
+        <main>
+            <div class="left"></div>
+            <div class="center">
+                 
+                <div class="image">
+                     <img src="images/me.png" alt="">
+                </div>
+                <div class="name">
+                    <h1>MIHLALI SOLWANDLE</h1>
+                </div>
+                <div class="jobTitle">
+                    <p id="position">Junior Software Developer</p>
+                </div>
+                <div class="socials">
+                    <ion-icon name="logo-twitter" class="socialIcon"></ion-icon>
+                    <ion-icon name="logo-instagram" class="socialIcon"></ion-icon>
+                    <ion-icon name="logo-github" class="socialIcon"></ion-icon>
+                </div>
+            </div>
+            <div class="right"></div>
+        </main>
+    </div>
+  
+
     <script src="index.js"></script>
+    
 </body>
 </html>
