@@ -10,38 +10,37 @@
     <title>Document</title>
 </head>
 <body>
+    <nav id="nav">
+        <div class="logo">
+            <h3>MS</h3>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#" class="active" id="homeTab">HOME</a>
+            </li>
+            <li>
+                <a href="#" id="portfolioTab">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="#"  id="skillsTab">SKILLS</a>
+            </li>
+            <li>
+                <a href="#" id="socialsTab">SOCIALS</a>
+            </li>
+        </ul>
+        <span class="buttonCont">
+            <button>
+                <ion-icon name="cloud-download-outline"></ion-icon>
+                <a href="pdf/MIHLALI SOLWANDLE UPDATED CV.pdf" download>DOWNLOAD CV</a>
+            </button>
+        </span>
+    </nav>
    
     <button class="toggle" id="toggle" type="button"><ion-icon name="sunny-outline"></ion-icon></button>
 
-    <div class="container">
-        <nav id="nav">
-            <div class="logo">
-                <h3>MS</h3>
-            </div>
-
-            <ul>
-                <li>
-                    <a href="#" class="active">HOME</a>
-                </li>
-                <li>
-                    <a href="#">PORTFOLIO</a>
-                </li>
-                <li>
-                    <a href="#">BLOG</a>
-                </li>
-                <li>
-                    <a href="#">SOCIALS</a>
-                </li>
-            </ul>
-            <span class="buttonCont">
-                <button>
-                    <ion-icon name="cloud-download-outline"></ion-icon>
-                    <a href="pdf/MIHLALI SOLWANDLE UPDATED CV.pdf" download>DOWNLOAD CV</a>
-                </button>
-            </span>
-        </nav>
-
-        <main>
+    <div class="container" id="mainCont">
+        <main id="mainDiv">
             <div class="left"></div>
             <div class="center">
                  
@@ -63,8 +62,67 @@
             <div class="right"></div>
         </main>
     </div>
-  
+     <!--SECOND SECTION-->
+    <section class="section2" id="section2">
+        <div class="containerSection2">
+            <div class="left">
+                <img src="images/me2.png" alt="">
+            </div>
+            <div class="right">
+                <div class="top">
+                    <h3>WHO AM I</h3>
+                    <p>I am a highly motivated and energetic individual who thrives in the face of challenges. With exceptional work ethic and strong communication and teamwork skills, I bring a winning combination of determination and collaborative spirit to any project I undertake. I am confident in my abilities, and I always strive to add value by delivering quality work that exceeds expectations. At the same time, I recognize the importance of continuous learning, and I am always open to new ideas and feedback. I believe that my skills and attitude make me a strong asset to any team, and I am eager to contribute to your organization's success.</p>
+                </div>
+                <div class="middle">
+                    <div class="cont">
+                        <div class="blocks" id="node"></div>
+                        <div class="blocks" id="react"></div>
+                        <div class="blocks"></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <button type="button">VIEW PROJECTS</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--SKILLS-->
+
+    <section class="skillsSection" id="skillsSection">
+         
+        <div class="titleHead">
+            <h1>SKILLS</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Rerum culpa natus perferendis quaerat. Voluptas laboriosam ipsa rerum cumque omnis,
+                 quasi atque ex magni mollitia, aut pariatur accusantium! Expedita, dolores rem.</p>
+             
+        </div>
+        <div class="skillsCont">
+            <div class="top">
+                <div class="skillBlocks">
+                       <img src="logos/react.png" alt="react">
+                </div>
+                <div class="skillBlocks">
+                    <img src="logos/node.png" alt="react">
+                </div>
+                <div class="skillBlocks">
+                    <img src="logos/html.png" alt="react">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="skillBlocks">
+                    <img src="logos/html.png" alt="react">
+                </div>
+                <div class="skillBlocks">
+                    <img src="logos/html.png" alt="react">
+                </div>
+                <div class="skillBlocks">
+                    <img src="logos/html.png" alt="react">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="index.js"></script>
     
 </body>

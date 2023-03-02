@@ -1,19 +1,14 @@
 :root{
-
     /*color and typography*/
-
     --primaryColor: rgb(255, 255, 255);
-
+    --buttonColor:rgb(75, 32, 100);
 }
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
-
     width: 100%;
     min-height: 100vh;
     background: rgb(0, 0, 0);
@@ -23,7 +18,6 @@ body{
     justify-content: flex-start;
 }
 .toggle{
-
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -37,7 +31,6 @@ body{
     justify-content: center;
 }
 .container{
-
     width: 80%;
     height: 100vh;
     background: transparent;
@@ -45,10 +38,9 @@ body{
 }
 
 nav{
-    margin-top: 0.5%;
     position: relative;
     border-radius: 12px;
-    width: 100%;
+    width: 80%;
     height: 10vh;
     background: transparent;
     display: flex;
@@ -56,11 +48,9 @@ nav{
     justify-content: flex-start;
     box-shadow: 1px 0px 5px black;
 }
-
 nav .logo{
     position:relative;
     height: 100%;
-
     width: 20%;
     display: flex;
     align-items: center;
@@ -68,9 +58,7 @@ nav .logo{
     overflow: hidden;
     padding: 10px;
 }
-
 nav .logo h3{
-
  color: white;
  overflow: hidden;
  height: 100%;
@@ -81,12 +69,10 @@ nav .logo h3{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  font-size: 44px;
 }
-
 nav ul{
     position: relative;
     width: 60%;
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,16 +96,22 @@ nav ul li a{
     transition: color 200ms ease-in-out;
 }
 nav ul li a:hover{
-    color: rgb(106, 107, 31);
+    color: rgb(31, 58, 107);
     transition: color 800ms ease-in-out;
-
 }
-
+#portfolioTab:hover{
+    color: rgb(163, 48, 48);
+}
+#skillsTab:hover{
+    color: rgb(26, 122, 55);
+    transform: scaleZ(2);
+}
+#socialsTab:hover{
+    color: rgb(236, 190, 36);
+}
 .active{
-
-    color: rgb(106, 107, 31);
+    color: var(--buttonColor);
 }
-
 nav .buttonCont{
     width: 20%;
     height: 100%;
@@ -129,7 +121,6 @@ nav .buttonCont{
 }
 
 nav .buttonCont button{
-
     width: 65%;
     height: 5vh;
     border: none;
@@ -137,7 +128,7 @@ nav .buttonCont button{
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-style: italic;
-    background: var(--primaryColor);
+    background: var(--buttonColor);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 2px;
     box-shadow: 1px 2px 10px black;
@@ -153,14 +144,45 @@ nav .buttonCont button a{
   color: black;
 }
 nav .buttonCont button a:visited{
-    color: rgb(207, 2, 2);
-  }
+    color: rgb(0, 0, 0);
+}
 main{
     width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.mainSlide{
+    box-shadow: 1px 1px 10px black;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    transition: border ease-in 1200ms;
+    top: -100%;
+    animation: mainSlide;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out ;
+
+   
+}
+
+@keyframes mainSlide {
+    0%{
+        top: 0;
+        opacity: 1;
+        z-index: 2;
+      
+    }
+    50%{
+        transition: all ease-in-out 1s;
+        opacity: 0.2;
+    }
+    80%{
+        opacity: 0.2;
+    }
 }
 
 main .left{
@@ -213,21 +235,19 @@ main .center .name{
 }
 
 main .center .name h1{
-
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: rgb(194, 194, 194);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    margin-top: -12%;
+    margin-top: -10%;
 }
 
 main .center .jobTitle{
-
     width: 100%;
     height: 10%;
     display: flex;
@@ -237,20 +257,17 @@ main .center .jobTitle{
 }
 
 main .center .jobTitle p{
-
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 1.3rem;
     color: rgb(139, 139, 139);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-  
 }
 main .center .socials{
-
     width: 100%;
     height: 5%;
     display: flex;
@@ -258,23 +275,259 @@ main .center .socials{
     justify-content: center;
     gap: 0.3%;
     z-index: 2;
-   
 }
 
 main .center .socials ion-icon{
-   
-   
     height: 100%;
     width: 10%;
     color: white;   
 }
-
-
-
-
 main .right{
-
     height: 100%;
     width: 10%;
-
 }
+
+/*SECTION 2*/
+
+.section2{
+    width: 80%;
+    height: 100vh;
+    background: transparent;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section2 .containerSection2{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section2 .containerSection2 .left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.section2 .containerSection2 .left img{
+   padding: 10px;
+   height: 100%;
+   transform: rotateY(90degs);
+}
+ 
+ .section2 .containerSection2 .right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+} 
+.section2 .containerSection2 .right .top{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+} 
+
+.section2 .containerSection2 .right .top h3{
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+} 
+.section2 .containerSection2 .right .top p{ 
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(112, 112, 112);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 10px;
+} 
+.section2 .containerSection2 .right .middle{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+} 
+.section2 .containerSection2 .right .middle .cont{
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    background: rgba(46, 45, 45, 0.281);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1%;
+    padding: 10px;
+} 
+.section2 .containerSection2 .right .middle .cont .blocks{
+    width: 33.3%;
+    height: 90%;
+    border-radius: 12px;
+    background: rgba(54, 54, 54, 0.596);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+
+#node{
+    background-image: url('logos/node-removebg-preview.png');
+}
+#react{
+    background-image: url('logos/react.png');
+}
+
+.section2 .containerSection2 .right .bottom{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+} 
+
+.section2 .containerSection2 .right .bottom button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 6px;
+    height: 7.5vh;
+    width: 20%;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:var(--buttonColor);
+} 
+
+
+/*SKILLS SECTION*/
+
+.skillsSection{
+
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+   
+}
+
+.skillsSection .titleHead{
+ 
+    width:40%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.skillsSection .titleHead p{
+   
+    width:100%;
+    height: 10vh;
+    color: rgb(109, 109, 109);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.skillsSection .titleHead h1{
+   
+    width:100%;
+    height: 10vh;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+
+
+.skillsSection .skillsCont{
+
+    width:80%;
+    height: 60%;
+ 
+    flex-wrap: wrap;
+}
+
+.skillsSection .skillsCont .top{
+
+    width:100%;
+    height: 50%;
+  
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+.skillsSection .skillsCont .bottom{
+
+    width:100%;
+    height: 50%;
+ 
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+.skillsSection .skillsCont .skillBlocks{
+
+    width:20%;
+    height: 90%;
+    background:rgb(16, 9, 19);
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.skillsCont img{
+
+    width: 60%;
+}
+
+
