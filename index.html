@@ -4,15 +4,18 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobileStyle/mobileStyle.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <nav id="nav">
-        <div class="logo">
+<!--DESKTOP DESIGN-->
+    <nav id="nav " class="mobileNavStyle">
+        <div class="logo mobileLogoStyle">
             <h3>MS</h3>
+            <ion-icon name="close-outline" class="closeMobileMenu" id="closeMobileMenu"></ion-icon>
         </div>
 
         <ul>
@@ -39,7 +42,7 @@
    
     <button class="toggle" id="toggle" type="button"><ion-icon name="sunny-outline"></ion-icon></button>
 
-    <div class="container" id="mainCont">
+    <div class="container mobileContainer" id="mainCont">
         <main id="mainDiv">
             <div class="left"></div>
             <div class="center">
@@ -75,9 +78,15 @@
                 </div>
                 <div class="middle">
                     <div class="cont">
-                        <div class="blocks" id="node"></div>
-                        <div class="blocks" id="react"></div>
-                        <div class="blocks"></div>
+                        <div class="blocks" id="frontEnd">
+                            <h1>FRONT END</h1>
+                        </div>
+                        <div class="blocks" id="react">
+                            <h1>BACK END</h1>
+                        </div>
+                        <div class="blocks">
+                            FULL STACK
+                        </div>
                     </div>
                 </div>
                 <div class="bottom">
@@ -100,8 +109,8 @@
         </div>
         <div class="skillsCont">
             <div class="top">
-                <div class="skillBlocks">
-                       <img src="logos/react.png" alt="react">
+                <div class="skillBlocks" id="reactBlock">
+                      <!--<img src="logos/react.png" alt="react">--> 
                 </div>
                 <div class="skillBlocks">
                     <img src="logos/node.png" alt="react">
@@ -112,17 +121,52 @@
             </div>
             <div class="bottom">
                 <div class="skillBlocks">
-                    <img src="logos/html.png" alt="react">
+                    <img src="logos/csharp.png" alt="react">
                 </div>
                 <div class="skillBlocks">
-                    <img src="logos/html.png" alt="react">
+                    <img src="logos/java.png" alt="react">
                 </div>
                 <div class="skillBlocks">
-                    <img src="logos/html.png" alt="react">
+                    <img src="logos/mySQl.png" alt="react">
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
+    <!--MOBILE ELEMENTS-->
+    <div class="mobile-toggle-menu-container">
+        <p>MIHLALI<span>SOLWANDLE.</span></p>
+        <ion-icon name="filter-outline" class="mobile-toggle-menu" id="mobile-toggle-menu"></ion-icon>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li> 
+            <ion-icon name="close-outline" id="mobile-close-nav" class="mobile-close-nav"></ion-icon>  
+        </ul>
+    </nav>
+    <div class="mobile-section1">
+        <span class="spacer"></span>
+        <h1 class="jobTitle">FULLSTACK DEVELOPER</h1>
+         <div class="mobile-buttonCont">
+            <button type="button">CONTACT ME</button>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+         </div>
+       
+    </div>
+    <div class="mobile-section2">
+        
+    </div>
+   
+  
     <script src="index.js"></script>
     
 </body>

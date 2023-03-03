@@ -1,0 +1,210 @@
+@media all and (max-width:768px)  {
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    /*HIDING DESKTOP AND TABLET VIEWS*/
+    
+    .mobileNavStyle{
+        display: none;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .section2{
+        display: none;
+    }
+
+    .skillsSection{
+        display: none;
+    }
+
+   
+
+    :root{
+
+        --main: rgb(22, 21, 22);
+        --primary:  orange;
+        --subtle: rgb(32, 97, 97)e;
+        --font:'Fjalla One', sans-serif;
+       
+    }
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background: var(--main);
+    }
+
+    .mobile-toggle-menu-container{
+
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: var(--subtle);
+        z-index: 2;
+    }
+
+    
+    .mobile-toggle-menu-container .mobile-toggle-menu{
+        font-size: 0.8rem;
+        width: 30%;
+        height: 55%;
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+       
+    }
+
+    .mobile-toggle-menu-container p{
+        font-size: 1rem;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-style: italic;
+        font-family: var(--font);
+        padding: 10px;
+    }
+    .mobile-toggle-menu-container p span{
+       color: var(--primary);
+    }
+
+    .mobile-nav{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(0, 0, 0, 0.493);
+        backdrop-filter: blur(10px);
+        border-radius: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: -100%;
+        transition: top ease-in-out 2s;
+        z-index: 3;
+    }
+
+    .mobile-nav ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height:90%;
+        list-style: none;
+    }
+
+    .mobile-nav ul li {
+        position: relative;
+        width: 100%;
+        height: 25%;
+    }
+    .mobile-nav ul li a{
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    .mobile-close-nav{
+        width: 100%;
+        height: 10%;
+        color:white;
+        font-size: 1.5rem;
+    }
+    .mobile-section1{
+        width: 100%;
+        height: 93vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .spacer{
+        width: 100%;
+        height: 25vh;
+    }
+    .mobile-section1 .jobTitle{
+        height: 30vh;
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        font-family: var(--font);
+        font-size: 2.8rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .mobile-section1 .jobTitle span{
+      color: var(--primary);
+      display: block;
+      border: solid;
+      border-radius: 6px;
+      font-size: 2.5rem;
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .mobile-buttonCont{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3%;
+        padding-left: 50px;
+    }
+
+    .mobile-buttonCont button{
+       height: 7vh;
+       background: var(--primary);
+       border: none;
+       color: white;
+       width: 35%;
+       padding: 5px;
+       font-size: 12px;
+       font-weight: bold;
+       border-radius: 3px;
+    }
+
+    .mobile-buttonCont ion-icon{
+        height: 2.5vh;
+        border: none;
+        color: white;
+        width: 10%;
+        padding: 2.5px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 3px;
+     }
+    
+
+     .mobile-section2{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+}
+
+
+    
