@@ -1,34 +1,24 @@
 @media all and (max-width:768px)  {
     @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
     /*HIDING DESKTOP AND TABLET VIEWS*/
-    
     .mobileNavStyle{
         display: none;
     }
-
     .container{
         display: none;
     }
-
     .section2{
         display: none;
     }
-
     .skillsSection{
         display: none;
     }
-
-   
-
     :root{
-
         --main: rgb(22, 21, 22);
-        --primary:  rgb(25, 78, 47);
+        --primary:  rgb(24, 53, 26);
         --subtle: rgb(32, 97, 97)e;
         --font:'Fjalla One', sans-serif;
-       
     }
-
     body{
         width: 100%;
         min-height: 100vh;
@@ -39,9 +29,19 @@
         gap: 10%;
         background: var(--main);
     }
-
+    #bgLogo{
+        display: block;
+        position: fixed;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        width: 95%;
+        height: 60%;
+        background-color: var(--primary);
+        border-radius: 50%;
+    }
     .mobile-toggle-menu-container{
-
         width: 100%;
         height: 10vh;
         display: flex;
@@ -53,8 +53,6 @@
         left: 0;
         padding: 10px;
     }
-
-    
     .mobile-toggle-menu-container .mobile-toggle-menu{
         width: 30%;
         height: 100%;
@@ -62,20 +60,14 @@
         align-items: center;
         color: rgb(255, 255, 255);
         font-weight: bold;
-     
-       
     }
     .mobile-toggle-menu-container .nav-spacer{
         width: 70%;
         height: 100%;
-       
     }
-
     .mobile-toggle-menu-container img{
         width: 25%;
     }
-  
-
     .mobile-nav{
         width: 100%;
         height: 50vh;
@@ -213,6 +205,7 @@
         align-items: center;
         justify-content: flex-start;
         padding: 10px;
+        background: var(--main);
     }
 
     .mobile-section2 h1{
@@ -271,7 +264,7 @@
         flex-direction: column;
         list-style: none;
         padding: 10px;
-        gap: 2%;
+        gap: 1%;
       }
       .mobile-section2 .list ul li{
         width: 100%;

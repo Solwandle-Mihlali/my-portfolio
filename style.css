@@ -18,6 +18,12 @@ body{
     justify-content: flex-start;
 }
 
+
+#bgLogo{
+
+    display: none;
+}
+
 .mobileLogo{
        display: none;  
 }
