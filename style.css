@@ -1,7 +1,7 @@
 :root{
     /*color and typography*/
     --primaryColor: rgb(255, 255, 255);
-    --buttonColor:rgb(75, 32, 100);
+    --buttonColor:rgb(23, 73, 32);;
 }
 *{
     padding: 0;
@@ -133,10 +133,10 @@ nav .buttonCont{
 
 nav .buttonCont button{
     width: 65%;
-    height: 5vh;
+    height: 7vh;
     border: none;
     padding: 2%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-style: italic;
     background: var(--buttonColor);
@@ -152,7 +152,7 @@ nav .buttonCont button a{
 
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 nav .buttonCont button a:visited{
     color: rgb(0, 0, 0);

@@ -23,7 +23,7 @@
     :root{
 
         --main: rgb(22, 21, 22);
-        --primary:  orange;
+        --primary:  rgb(25, 78, 47);
         --subtle: rgb(32, 97, 97)e;
         --font:'Fjalla One', sans-serif;
        
@@ -36,6 +36,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        gap: 10%;
         background: var(--main);
     }
 
@@ -55,8 +56,8 @@
 
     
     .mobile-toggle-menu-container .mobile-toggle-menu{
-        width: 35%;
-        height: 60%;
+        width: 30%;
+        height: 100%;
         display: flex;
         align-items: center;
         color: rgb(255, 255, 255);
@@ -65,7 +66,7 @@
        
     }
     .mobile-toggle-menu-container .nav-spacer{
-        width: 40%;
+        width: 70%;
         height: 100%;
        
     }
@@ -85,11 +86,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        left: 0;
-        top: -100%;
         transition: top ease-in-out 2s;
+        position: absolute;
+        top: -100%;
         z-index: 3;
+        
     }
 
     .mobile-nav ul{
@@ -144,7 +145,22 @@
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
+        font-style: italic;
         padding: 10px;
+        animation: jobTitleFadeIn 1.5s 1 ease-in-out;
+    }
+
+    @keyframes jobTitleFadeIn {
+        
+        0%{
+            opacity: 0;
+            margin-bottom: -100%;
+            transition: animation 2.5s ease-in-out;
+        }
+        50%{
+            opacity: 0.2;
+            transform: rotateX(90deg);
+        }
     }
 
     .spacerOne{
@@ -196,29 +212,25 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        border: solid green 1px;
         padding: 10px;
     }
 
     .mobile-section2 h1{
-
         color: white;
         width: 100%;
         height: 10vh;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         padding: 10px;
         font-family: var(--font);
-    }
-
-    
+    }    
     .mobile-section2 p{
-        color: var(--primary);
+        color: rgb(151, 151, 151);
         width: 100%;
         height: 10vh;
-        font-size: 0.8rem;
+        font-size: 1rem;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -227,9 +239,83 @@
         padding: 10px;
     }
 
-    
-    
+    .mobile-section2 .section2-button{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .mobile-section2 .section2-button button{
+       height: 7vh;
+       width: 50%;
+       background-color: var(--primary);
+       border: none;
+       color: white;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight: bold;
+       border-radius: 6px;
+        
+    }
+
+    .mobile-section2 .list{
+       width: 100%;
+       height:70vh ;
+     }
+     .mobile-section2 .list ul{
+        width: 100%;
+        height:70vh ;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        gap: 2%;
+      }
+      .mobile-section2 .list ul li{
+        width: 100%;
+        height:25%;
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        background: rgba(17, 17, 17, 0.692);
+        box-shadow: 1px 2px 10px black;
+        border-radius: 12px;
+      }
+
+      .mobile-section2 .list ul li img{
+     
+        height:100%;
+        padding: 10px;
+      }
+
+      .mobile-section2 .list ul li a{
+     
+        height:100%;
+        flex: 1;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        
+      }
+      .mobile-section2 .list ul li span{
+     
+        height:100%;
+        flex: 1;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+        
+      }
+
 }
-
-
-    
